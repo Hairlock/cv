@@ -1,0 +1,8 @@
+FROM mhart/alpine-node:latest
+
+WORKDIR /app
+COPY package.json .
+
+RUN yarn install
+COPY . .
+CMD ["yarn", "start"]

@@ -1,0 +1,23 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t yannicksealy/cv-frontend ./ui
+  - docker build -t yannicksealy/nginx ./nginx
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push yannicksealy/cv-frontend
+  - docker push yannicksealy/nginx
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: CV
+  env: Cv-env
+  bucket_name: elasticbeanstalk-us-east-2-521418590951
+  bucket_path: cv
+  on:
+    branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key:
+      secure: $AWS_SECRET_KEY

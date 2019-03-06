@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "parcel serve assets/index.html --hmr-port 1235",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.5.1",
+    "pulp": "^12.3.1",
+    "purescript": "^0.12.3"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
