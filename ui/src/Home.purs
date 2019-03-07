@@ -37,7 +37,7 @@ component =
             [css "container"]
             [HH.nav
                 []
-                [ HH.text "Header Component Test" ]]
+                [ HH.text "Header Component test" ]]
 
     eval :: Query ~> H.ComponentDSL State Query Void m
     eval = case _ of
