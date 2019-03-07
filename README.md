@@ -1,7 +1,13 @@
-# Halogen Parcel Hot-reload
+# CV Website 
 
-Hot reloading with Halogen.
+## Frontend
 
-psc-package build
+Purescript halogen with hot reloading
 
-npm start
+### Build commands
+* npm i / yarn install
+* psc-package build
+* yarn serve-dev
+
+### Alternatively
+* docker-compose up
