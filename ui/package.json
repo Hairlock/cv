@@ -7,13 +7,16 @@
     "test": "test"
   },
   "scripts": {
-    "start": "parcel serve assets/index.html --hmr-port 1235",
-    "build": "parcel build index.html"
+    "serve": "http-server",
+    "build": "parcel build assets/index.html",
+    "serve-dev": "parcel serve assets/index.html --hmr-port 1235"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.5.1"
+    "parcel-bundler": "^1.5.1",
+    "psc-package": "^3.0.1",
+    "purescript": "^0.12.3"
   },
   "dependencies": {
     "http-server": "^0.11.1"

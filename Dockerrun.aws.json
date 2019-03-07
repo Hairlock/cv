@@ -2,9 +2,9 @@
     "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
-            "name": "frontend",
-            "image": "yannicksealy/cv-frontend",
-            "hostname": "frontend",
+            "name": "ui",
+            "image": "yannicksealy/cv-ui",
+            "hostname": "ui",
             "essential": false,
             "memory": 128
         },
@@ -19,7 +19,7 @@
                 }
             ],
             "links": [
-                "frontend"
+                "ui"
             ],
             "memory": 128
         }
