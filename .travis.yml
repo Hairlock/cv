@@ -3,10 +3,10 @@ services:
   - docker
 
 script:
-  - docker build -t yannicksealy/cv-frontend ./ui
+  - docker build -t yannicksealy/cv-ui ./ui
   - docker build -t yannicksealy/nginx ./nginx
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push yannicksealy/cv-frontend
+  - docker push yannicksealy/cv-ui
   - docker push yannicksealy/nginx
 
 deploy:
