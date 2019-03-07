@@ -12,10 +12,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: us-east-2
-  app: CV
-  env: Cv-env
+  app: cv-new
+  env: CvNew-env
   bucket_name: elasticbeanstalk-us-east-2-521418590951
-  bucket_path: cv
+  bucket_path: cv-new
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
