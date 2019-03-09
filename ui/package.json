@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "http-server",
     "build": "parcel build assets/index.html",
-    "serve-dev": "parcel serve assets/index.html --hmr-port 1235"
+    "dev": "parcel serve assets/index.html --hmr-port 1235"
   },
   "author": "",
   "license": "MIT",
