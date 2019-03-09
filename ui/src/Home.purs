@@ -3,11 +3,9 @@ module Home where
 import Prelude
 
 import Data.Maybe (Maybe(..))
-
 import Halogen as H
 import Halogen.HTML as HH
-
-import Utils (css)
+import Utils.Css (cs)
 
 foreign import unsafeInitialStateHandler :: forall a b. String -> (b -> a) -> b -> a
 foreign import unsafeRenderStateHandler :: forall a b. String -> (a -> b) -> a -> b
@@ -34,10 +32,8 @@ component =
     render :: State -> H.ComponentHTML Query
     render state =
         HH.div
-            [css "container"]
-            [HH.nav
-                []
-                [ HH.text "Header Component test" ]]
+            [cs "main"]
+            [ hero ]
 
     eval :: Query ~> H.ComponentDSL State Query Void m
     eval = case _ of
@@ -45,3 +41,15 @@ component =
             pure next
 
         
+hero :: forall t1 t2. HH.HTML t2 t1
+hero =
+    HH.section 
+        [ cs "hero" ]
+        [ HH.div 
+            [ cs "container" ]
+            [ HH.h1 
+                [ cs "hero__title"]
+                [ HH.text "Hey, I'm Yannick and I'm a developer based \
+                \in London."  ] 
+            ]
+        ]

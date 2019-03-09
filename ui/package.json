@@ -9,12 +9,13 @@
   "scripts": {
     "serve": "http-server",
     "build": "parcel build assets/index.html",
-    "serve-dev": "parcel serve assets/index.html --hmr-port 1235"
+    "dev": "parcel serve assets/index.html --hmr-port 1235"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.5.1"
+    "parcel-bundler": "^1.5.1",
+    "sass": "^1.17.2"
   },
   "dependencies": {
     "http-server": "^0.11.1"
