@@ -1,0 +1,22 @@
+.hero {
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.hero__title {
+    position: relative;
+    max-width: $size-desktop * 0.8;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    // letter-spacing: -1px;
+    line-height: 2;
+    font-size: $font-size-h1;
+    font-weight: 400;
+
+    @include min-width($size-tablet) {
+        margin-top: 1.25em;
+        margin-bottom: 2.5em;
+    }
+}
