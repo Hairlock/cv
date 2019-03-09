@@ -2,7 +2,7 @@ ARG     NODE_VERSION=10.15.0
 
 FROM    node:${NODE_VERSION} as builder
 
-ENV PURESCRIPT_DOWNLOAD_SHA1 fb424079e63fb134647366ff594fef6fbff11553
+ENV PURESCRIPT_DOWNLOAD_SHA1 f0c9fae808ae27973de7c77519f87ae6e4837312
 
 RUN npm install -g pulp@12.3.0 psc-package parcel-bundler
 
