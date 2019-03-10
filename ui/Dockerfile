@@ -27,7 +27,9 @@ ENV USER=pureuser \
 RUN set -ex; \
     psc-package install; \
     psc-package build; \
-    parcel build assets/index.html;
+    parcel build assets/index.html; \
+    cp -a images/. dist/;
+
 
 
 FROM mhart/alpine-node:latest

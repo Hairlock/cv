@@ -1,0 +1,45 @@
+nav {
+    position: relative;
+    padding: 2em 0 0 0.5em;
+    align-items: center;
+    z-index: 10;
+
+    .nav__brand {
+        flex: 1 1 0;
+        align-self: flex-start;
+
+        a {
+            display: inline-block;
+        }
+
+        img {
+            height: auto;
+            width: 114px;
+            overflow: visible;
+            transition: all 1.2s ease-in-out;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .nav__items {
+        flex: 2 1 0;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    .nav__item {
+        display: inline-block;
+        padding: 0 40px;
+        letter-spacing: 0.5px;
+        font-size: 1.5rem;
+        transition: color 250ms ease;
+
+        &:hover,:focus,:active {
+            color: $primary-color;
+        }
+    }
+}

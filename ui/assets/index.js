@@ -14,7 +14,10 @@ if (module.hot) {
   });
 }
 
-// import './fonts/*.ttf';
+// Fonts
+import './fonts/*.*';
+
+// Styles
 import './styles/index.scss';
 
 main();

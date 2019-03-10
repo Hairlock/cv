@@ -1,10 +1,11 @@
 {
-    "name": "yannick-cv",
-    "set": "psc-0.12.3-20190304",
-    "source": "https://github.com/purescript/package-sets.git",
-    "depends": [
-        "prelude",
-        "console",
-        "halogen"
-    ]
+  "name": "yannick-cv",
+  "set": "psc-0.12.3-20190304",
+  "source": "https://github.com/purescript/package-sets.git",
+  "depends": [
+    "console",
+    "functions",
+    "halogen",
+    "prelude"
+  ]
 }
