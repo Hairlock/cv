@@ -2,21 +2,27 @@
     .container {
         position: relative;
         z-index: 10;
+        width: 100%;
+        text-align: center;
+
+        & h1, h2 {
+            width: 100%;
+            max-width: $size-desktop * 0.8;
+        }
     }
 }
 
 .hero__title {
     position: relative;
-    max-width: $size-desktop * 0.8;
     margin-top: 0.5em;
-    margin-bottom: 1.5em;
-    // letter-spacing: -1px;
-    line-height: 2;
+    margin-bottom: 0.3em;
+    letter-spacing: 1px;
+    line-height: 2.1;
     font-size: $font-size-h1;
     font-weight: 400;
 
-    @include min-width($size-tablet) {
-        margin-top: 1.25em;
-        margin-bottom: 2.5em;
-    }
+    // @include min-width($size-tablet) {
+    //     margin-top: 1.25em;
+    //     margin-bottom: 2.5em;
+    // }
 }

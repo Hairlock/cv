@@ -14,6 +14,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "parcel-bundler": "^1.5.1",
     "sass": "^1.17.2"
   },
