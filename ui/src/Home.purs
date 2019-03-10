@@ -37,7 +37,8 @@ component =
         HH.div
             [cs "main"]
             [ nav
-            , hero ]
+            , hero 
+            ]
 
     eval :: Query ~> H.ComponentDSL State Query Void m
     eval = case _ of
@@ -71,15 +72,9 @@ nav :: forall t1 t2. HH.HTML t2 t1
 nav =
     let 
         navData =
-            [ Tuple "/#work" "Work"
-            , Tuple "/#skills" "Skills"
-            , Tuple "/#contact" "Contact" ]
-
-        toNavItem ni =
-            NavItem (fst ni) (snd ni)
-
-        navItems = 
-            map toNavItem navData          
+            [ NavItem "/#work" "Work"
+            , NavItem "/#skills" "Skills"
+            , NavItem "/#contact" "Contact" ]
 
         navItemLi (NavItem href name) =
             HH.li
@@ -91,7 +86,7 @@ nav =
                     ]
 
         navList =
-            map navItemLi navItems
+            map navItemLi navData
     in
     HH.nav 
         [ cs "nav" ]
@@ -102,7 +97,7 @@ nav =
                 [  HH.a
                     [ HP.href "/" ]
                     [ HH.img
-                        [ HP.src "/me.jpg" ]
+                        [ HP.src "/self.jpg" ]
                     ]
                 ]
             , HH.ul
