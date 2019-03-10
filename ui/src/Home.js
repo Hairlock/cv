@@ -28,7 +28,3 @@ exports.unsafeRenderStateHandler = function (key) {
     };
   };
 };
-
-exports.navImageUrl = function () {
-  return require('../../assets/images/me.JPG');
-}

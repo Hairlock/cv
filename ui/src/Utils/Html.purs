@@ -1,4 +1,4 @@
-module Utils.Css where
+module Utils.Html where
 
 import Prelude
 import Halogen.HTML as HH

@@ -17,9 +17,6 @@ if (module.hot) {
 // Fonts
 import './fonts/*.*';
 
-// Images
-import './images/*.*';
-
 // Styles
 import './styles/index.scss';
 

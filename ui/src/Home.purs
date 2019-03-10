@@ -3,17 +3,17 @@ module Home where
 import Prelude
 
 import Data.Maybe (Maybe(..))
+import Data.Tuple (Tuple(..), fst, snd)
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Properties as HP
-import Data.Function.Uncurried (Fn0, runFn0)
-import Utils.Css (cs)
+import Utils.Html (cs)
 
 foreign import unsafeInitialStateHandler :: forall a b. String -> (b -> a) -> b -> a
 foreign import unsafeRenderStateHandler :: forall a b. String -> (a -> b) -> a -> b
-foreign import navImageUrl :: Fn0 String
 
-type State = {}
+
+type State = {} 
 
 data Query a
     = NoOp a
@@ -60,8 +60,39 @@ hero =
             ]
         ]
 
+type NavItemHref = String
+type NavItemName = String
+
+data NavItem = 
+    NavItem NavItemHref NavItemName
+
+
 nav :: forall t1 t2. HH.HTML t2 t1
 nav =
+    let 
+        navData =
+            [ Tuple "/#work" "Work"
+            , Tuple "/#skills" "Skills"
+            , Tuple "/#contact" "Contact" ]
+
+        toNavItem ni =
+            NavItem (fst ni) (snd ni)
+
+        navItems = 
+            map toNavItem navData          
+
+        navItemLi (NavItem href name) =
+            HH.li
+                    [ cs "nav__item" ]
+                    [ HH.a
+                        [ HP.href href ]
+                        [ HH.text name
+                        ]
+                    ]
+
+        navList =
+            map navItemLi navItems
+    in
     HH.nav 
         [ cs "nav" ]
         [ HH.div
@@ -70,10 +101,12 @@ nav =
                 [ cs "nav__brand" ]
                 [  HH.a
                     [ HP.href "/" ]
-                    [ 
-                        HH.img
-                            [ HP.src $ runFn0 navImageUrl ]
+                    [ HH.img
+                        [ HP.src "/me.jpg" ]
                     ]
-                ] 
+                ]
+            , HH.ul
+                [ cs "nav__items" ]
+                navList
             ]
         ]
