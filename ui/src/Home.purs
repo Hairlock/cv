@@ -3,7 +3,6 @@ module Home where
 import Prelude
 
 import Data.Maybe (Maybe(..))
-import Data.Tuple (Tuple(..), fst, snd)
 import Halogen as H
 import Halogen.HTML as HH
 import Halogen.HTML.Properties as HP
