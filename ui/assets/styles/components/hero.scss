@@ -1,4 +1,6 @@
 .hero {
+    padding-bottom: 4em;
+
     .container {
         position: relative;
         z-index: 10;
@@ -12,7 +14,7 @@
 
 .hero__title {
     position: relative;
-    margin-top: 0.5em;
+    margin-top: 1.1em;
     margin-bottom: 0.3em;
     letter-spacing: 1px;
     line-height: 2.1;
