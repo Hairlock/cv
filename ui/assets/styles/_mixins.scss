@@ -3,3 +3,31 @@
         @content;
     }
 }
+
+@mixin hero-link() {
+    color: $primary-color-light;
+    transition: color 250ms ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $black-color;
+    }
+}
+
+@mixin sub-header() {
+    display: flex;
+    flex: 1 1 100%;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 400;
+
+    @include min-width($size-tablet) {
+        font-size: $font-size-h2;
+    }
+
+    &.header--white {
+        color: $white-color;
+    }
+}
