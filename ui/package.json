@@ -21,6 +21,7 @@
     "sass": "^1.17.2"
   },
   "dependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "smooth-scroll": "^16.0.0"
   }
 }

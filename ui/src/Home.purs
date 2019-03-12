@@ -98,7 +98,7 @@ nav =
                 [  HH.a
                     [ HP.href "/" ]
                     [ HH.img
-                        [ HP.src "/self.jpg" ]
+                        [ HP.src "/hey.jpg" ]
                     ]
                 ]
             , HH.ul
@@ -119,7 +119,7 @@ data HistoryItem = HistoryItem
 history :: forall t1 t2. HH.HTML t2 t1
 history = 
     HH.section
-        [ cs "history-container" ]
+        [ cs "history-container", HP.id_ "history" ]
         [ HH.div
             [ cs "container" ]
             [ HH.h2
