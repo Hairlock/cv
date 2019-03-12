@@ -21,3 +21,5 @@ import './fonts/*.*';
 import './styles/index.scss';
 
 main();
+
+const scroll = new SmoothScroll('a[href*="#"]');
