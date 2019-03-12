@@ -1,8 +1,8 @@
 $grey-outline-color: #dadada;
 
-.history-container {
+.experience-container {
     background: #fbfbfb;
-    padding: 4em 0;
+    padding: 1em 0 0 0;
 
     .header {
         display: flex;
@@ -14,14 +14,14 @@ $grey-outline-color: #dadada;
         font-weight: 400;
       }
 
-    .history__items {
+    .experience__items {
         width: 100%;
         margin: 0;
         padding: 0 5px;
     
     }
     
-    .history__item {
+    .experience__item {
         transform: translateY(0);
         display: block;
         padding: 18px 10% 20px;
@@ -40,21 +40,21 @@ $grey-outline-color: #dadada;
             background: linear-gradient(90deg, $primary-color-light, $primary-color, $primary-color-light);
             color: $white-color;
 
-            .history-parent,
-            .history-detail {
+            .experience-parent,
+            .experience-detail {
                 color: $white-color;
             }
         }
     }
 
-    .history__item-link {
+    .experience__item-link {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
 
-        .history-parent {
+        .experience-parent {
             flex: 3 1 100%;
             margin-bottom: 0;
             color: $primary-color;
@@ -65,14 +65,14 @@ $grey-outline-color: #dadada;
             transition: color 300ms ease;
         }
 
-        .history-detail {
+        .experience-detail {
             color: $dark-grey-color;
             font-size: 1rem;
             font-weight: 400;
             transition: color 300ms ease;
         }
 
-        .history-subtitle {
+        .experience-subtitle {
             flex: 3 1 100%;
           
             @include min-width($size-tablet) {
@@ -80,7 +80,7 @@ $grey-outline-color: #dadada;
             }
           }
           
-        .history-role {
+        .experience-role {
             flex: 1 1 100%;
         
             @include min-width($size-tablet) {
@@ -88,7 +88,7 @@ $grey-outline-color: #dadada;
             }
         }
         
-        .history-date {
+        .experience-date {
             flex: 1 1 100%;
             
             @include min-width($size-tablet) {
@@ -98,9 +98,6 @@ $grey-outline-color: #dadada;
             }
         }
     }
-
-
-
 }
 
 

@@ -40,6 +40,10 @@ nav {
         font-size: 1.5rem;
         transition: color 250ms ease;
 
+        @include max-width($size-tablet * 1.2) {
+            padding: 0 20px;
+        }
+
         &:hover,:focus,:active {
             color: $primary-color;
         }
