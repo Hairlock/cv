@@ -4,6 +4,12 @@
     }
 }
 
+@mixin max-width($w) {
+    @media screen and (max-width: $w) {
+        @content;
+    }
+}
+
 @mixin hero-link() {
     color: $primary-color-light;
     transition: color 250ms ease;
