@@ -22,5 +22,5 @@ import './styles/index.scss';
 
 main();
 
-import SmoothScroll from './../node_modules/smooth-scroll';
+import SmoothScroll from '../node_modules/smooth-scroll';
 const scroll = new SmoothScroll('a[href*="#"');
