@@ -55,7 +55,12 @@ hero =
             [ cs "container" ]
             [ HH.h1 
                 [ cs "hero__title"]
-                [ HH.text "Hi, I'm Yannick Sealy, a developer\
+                [ HH.text "Hi, I'm "
+                    , HH.a 
+                        [ HP.href "https://www.linkedin.com/in/yannick-sealy-b7585970/"
+                        , HP.target "_blank" ] 
+                        [ HH.text "Yannick Sealy" ]
+                    , HH.text ", a developer\
                  \ based in London. I'm interested in functional programming \
                  \ among other things :) "  ] 
             ]
