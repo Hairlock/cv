@@ -20,6 +20,10 @@
     line-height: 2.1;
     font-size: $font-size-h1;
     font-weight: 400;
+
+    a {
+        color: $primary-color-light;
+    }
 }
 
 .hero__interest {

@@ -37,7 +37,7 @@ $grey-outline-color: #dadada;
             transform: translateY(-3px);
             border-color: transparent;
             box-shadow: 0 1px 6px rgba($black-color, 0.16);
-            background: linear-gradient(90deg, $primary-color-light, $primary-color, $primary-color-light);
+            background: linear-gradient(90deg, $primary-color-light, $primary-color-dark);
             color: $white-color;
 
             .experience-parent,

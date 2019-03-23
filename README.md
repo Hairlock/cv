@@ -1,5 +1,8 @@
 # CV Website  [![Build Status](https://travis-ci.org/Hairlock/cv.svg?branch=master)](https://travis-ci.org/Hairlock/cv)
 
+### Full Build
+* docker-compose up
+
 ## Frontend
 
 Built in purescript halogen with hot reloading using parceljs
@@ -9,8 +12,16 @@ Built in purescript halogen with hot reloading using parceljs
 * psc-package build
 * yarn serve-dev
 
-### Alternatively
-* docker-compose up
+
+## Backend
+
+Build in Haskell with Servant Api served with Warp using Persistent against a postgres db
+
+### Build commands
+* stack build
+* stack ghci
+* :l DevelMain
+* Develmain.update
 
 ## Deployment
 
