@@ -25,6 +25,7 @@ hero =
         interests =
             [ { logo: "fp_logo.svg", href: "https://www.youtube.com/watch?v=LnX3B9oaKzw"}
             , { logo: "climbing_logo.svg", href: "https://www.archclimbingwall.com/centres"}
+            , { logo: "jj.svg", href: "http://carpediembjj.co.uk/"}
             ] 
 
         interestItem {logo, href} =
@@ -44,10 +45,10 @@ hero =
             concat $ [ interestLabel label, map interestItem items ]
 
         languageInterests =
-            interestBuilder "Languages:" languages
+            interestBuilder "Languages" languages
 
         otherInterests =
-            interestBuilder "Interests:" interests
+            interestBuilder "Interests" interests
     in
     HH.section 
         [ cs "hero" ]
@@ -58,11 +59,12 @@ hero =
                 [ HH.text "Hi, I'm "
                     , HH.a 
                         [ HP.href "https://www.linkedin.com/in/yannick-sealy-b7585970/"
-                        , HP.target "_blank" ] 
+                        , HP.target "_blank" ]
                         [ HH.text "Yannick Sealy" ]
-                    , HH.text ", a developer\
-                 \ based in London. I'm interested in functional programming \
-                 \ among other things :) "  ] 
+                        , HH.text ", a developer\
+                            \ based in London. I'm interested in functional programming \
+                            \ among other things :)"
+                ]
             ]
         , HH.div
             [ cs "container container--wrap" ]

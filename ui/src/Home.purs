@@ -11,6 +11,7 @@ import Components.Nav (nav)
 import Components.Hero (hero)
 import Components.Experience (experience)
 import Components.Background (background)
+import Components.Skills (skills)
 import Components.Footer (footer)
 
 foreign import unsafeInitialStateHandler :: forall a b. String -> (b -> a) -> b -> a
@@ -42,8 +43,9 @@ component =
             [cs "main"]
             [ nav
             , hero 
-            , experience
             , background
+            , experience
+            , skills
             , footer
             ]
 
