@@ -2,7 +2,9 @@ module Components.Nav where
 
 import Prelude
 
+import Data.Array (concat)
 import Halogen.HTML as HH
+
 import Halogen.HTML.Properties as HP
 import Utils.Html (cs)
 
@@ -30,9 +32,21 @@ nav =
                     [ HH.text name
                     ]
                 ]
+        
+        cv =
+            HH.li
+                [ cs "nav__item" ]
+                [ HH.a
+                    [ HP.href "/Yannick_Sealy_CV.pdf"
+                    , HP.target "_blank"
+                    , HP.attr (HH.AttrName "download") "Yannick_Sealy_CV"]
+                    [ HH.text "CV"
+                    ]
+                ]
+        
 
         navList =
-            map (NavItem >>> navItemLi) navItems
+            concat $ [ map (NavItem >>> navItemLi) navItems, [cv]]        
     in
     HH.nav 
         [ cs "nav", HP.id_ "nav" ]

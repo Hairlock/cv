@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "http-server",
     "build": "npm run copy && parcel build assets/index.html",
-    "copy": "cpx \"images\\*.*\" \"dist\"",
+    "copy": "cpx \"static\\*.*\" \"dist\"",
     "dev": "npm run copy && parcel serve assets/index.html --hmr-port 1235"
   },
   "author": "",
