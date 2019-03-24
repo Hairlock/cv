@@ -26,6 +26,7 @@ ENV USER=pureuser \
 
 RUN set -ex; \
     psc-package install; \
-    psc-package build;
+    psc-package build \
+    cp -a static/. dist/;
 
 CMD ["yarn", "serve-dev"]

@@ -28,7 +28,7 @@ RUN set -ex; \
     psc-package install; \
     psc-package build; \
     parcel build assets/index.html; \
-    cp -a images/. dist/;
+    cp -a static/. dist/;
 
 
 
