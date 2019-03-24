@@ -14,7 +14,7 @@ skills =
         allSkills =
             [ { title: "Know Pretty Well", pills: ["Elm", "React", "C#", "JS"
                 , "CI/CD", "Docker", "Nginx", "SQL", "Git", "Build-tools"] }
-            , { title: "Bit Rusty", pills:  ["K8s", "Clojure/Cljs", "AWS"] }
+            , { title: "Bit Rusty", pills:  ["K8s", "Elixir", "Clojure/Cljs", "AWS"] }
             , { title: "Very Keen On", pills: ["Haskell", "Purescript", "Coding :)"] }
             ] 
 
