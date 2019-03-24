@@ -32,7 +32,7 @@ experience =
         ]
     where
         experienceItems =
-            [ { parent: "Dnata Travel", subtitle: "Emirates Holidays B2B", role: "Full Stack Developer", date: "2018", href: "https://www.emiratesholidays.com"}
+            [ { parent: "Dnata Travel", subtitle: "Emirates Holidays B2B", role: "Fullstack Developer", date: "2018", href: "https://www.emiratesholidays.com"}
             , { parent: "Dnata Travel", subtitle: "Travel Republic B2C", role: "Frontend Developer", date: "2013", href: "https://www.travelrepublic.co.uk"}
             , { parent: "UCL", subtitle: "Computer Science", role: "Microsoft Sponsored Project", date: "2012", href: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc"}
             , { parent: "Imperial", subtitle: "Biomedical Engineering", role: "In-Uni Project", date: "2009", href: "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc"}

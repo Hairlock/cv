@@ -16,9 +16,9 @@ nav :: forall t1 t2. HH.HTML t2 t1
 nav =
     let 
         navItems =
-            [ { href : "/#experience", name : "Experience"}
-            , { href : "/#background", name : "Background"}
-            , { href : "/#projects", name : "Projects"}
+            [ { href : "/#background", name : "Background"}
+            , { href : "/#experience", name : "Experience"}
+            , { href : "/#skills", name : "Skills"}
             , { href : "/#contact", name : "Contact"}
             ]
 
@@ -35,7 +35,7 @@ nav =
             map (NavItem >>> navItemLi) navItems
     in
     HH.nav 
-        [ cs "nav" ]
+        [ cs "nav", HP.id_ "nav" ]
         [ HH.div
             [cs "container" ]
             [ HH.div

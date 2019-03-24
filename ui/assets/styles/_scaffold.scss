@@ -28,3 +28,19 @@ body {
       flex-wrap: wrap;
     }
   }
+
+  .title-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+        font-size: $font-size-h2;
+    }
+  }
+
+  .icon {
+      margin-left: 7px;
+      margin-top: 2px;
+  }
