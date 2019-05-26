@@ -57,7 +57,7 @@ nav =
                 [  HH.a
                     [ HP.href "/" ]
                     [ HH.img
-                        [ HP.src "/face.jpg" ]
+                        [ HP.src "/face.png" ]
                     ]
                 ]
             , HH.ul
